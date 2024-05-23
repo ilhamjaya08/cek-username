@@ -1,4 +1,5 @@
 <script>
+	import ApiCards from '../components/ApiCards.svelte';
 </script>
 
 <svelte:head>
@@ -16,6 +17,7 @@
 		<br> seperti uid game, e-money, rekening bank,
 		pelanggan listrik, dan lainnya.
 	</h6>
+	<ApiCards/>
 	</div>
 </section>
 
