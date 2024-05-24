@@ -4,7 +4,7 @@
     import ApiData from '../lib/core/ApiData.js';
 </script>
 
-<div class='grid grid-cols-3 gap-4'>
+<div class='grid md:grid-cols-3 gap-4'>
 {#each ApiData as data}
 <div  class="space-y-4 mt-12">
     <Card img={data.banner}>
