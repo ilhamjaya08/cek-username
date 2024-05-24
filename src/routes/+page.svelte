@@ -1,11 +1,14 @@
 <script>
 	import ApiCards from '../components/ApiCards.svelte';
+	import Stargazers from '../components/Stargazers.svelte';
 </script>
 
 <svelte:head>
 	<title>Cek Username API</title>
 	<meta name="description" content="Cek Username Page" />
 </svelte:head>
+
+
 
 <section class="mt-28">
 	<div class="text-center">
@@ -17,6 +20,7 @@
 		<br> seperti uid game, e-money, rekening bank,
 		pelanggan listrik, dan lainnya.
 	</h6>
+	<Stargazers/>
 	<ApiCards/>
 	</div>
 </section>

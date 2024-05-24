@@ -4,7 +4,7 @@
 	import github from '$lib/images/github.svg';
 </script>
 
-<header>
+<header class="mx-auto">
 
 	<nav>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
