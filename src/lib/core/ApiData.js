@@ -12,7 +12,7 @@ const ApiData = [
         name: 'Game Nickname Validator',
         desc: 'Terdapat lebih dari 10+ game yang dapat anda validasikan usernamenya disini',
         url: baseUrl + 'game',
-        link: '',
+        link: '/game',
         banner: "https://telegra.ph/file/839443d270c6ee419dad4.jpg"
     },
     {
@@ -20,7 +20,7 @@ const ApiData = [
         name: 'E-Wallet Username Validator',
         desc: 'Cek Username E-Walletmu dengan mudah di sini',
         url: baseUrl + 'e-wallet',
-        link: '',
+        link: 'ewallet',
         banner: "https://console.kr-asia.com/wp-content/uploads/2020/07/Indonesia_mobile_wallet.png"
     },
     {
@@ -28,7 +28,7 @@ const ApiData = [
         name: 'Rekening Bank Checker',
         desc: 'Puluhan Bank di Indonesia dapat anda cek disini ',
         url: baseUrl + 'bank',
-        link: '',
+        link: '/bank',
         banner: "https://th.bing.com/th/id/OIP.rftgwUfK7VYtfLiLGZ_KBAHaE8?rs=1&pid=ImgDetMain"
     },
     {
@@ -36,7 +36,7 @@ const ApiData = [
         name: 'Cek Nama Pelanggan Listrik',
         desc: 'Cek nama pengguna layanan listrik PLN',
         url: baseUrl + 'pln',
-        link: '',
+        link: '/pln',
         banner: "https://cdn-brilio-net.akamaized.net/news/2022/06/14/231356/5-cara-cek-nomor-token-listrik-via-online-bisa-lewat-pln-mobile-220614i.jpg"
     }
 ]
