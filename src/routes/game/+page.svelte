@@ -1,7 +1,8 @@
 <script>
     import GameCarousel from "../../components/GameCarousel.svelte";
-    import { Label, Select, Input, Button, GradientButton } from 'flowbite-svelte';
+    import { Label, Select, Input, Button, Toast, GradientButton } from 'flowbite-svelte';
     import axios from "axios";
+    import { ExclamationCircleSolid } from 'flowbite-svelte-icons';
 
     const baseUrl = "https://cek-username.onrender.com/game/"
     let selected;
@@ -34,7 +35,8 @@
 
     let res;
     let ping;
-    let response
+    let response;
+    let err;
     async function fetchData() {
         if (selected === "freefire") {
          try {
@@ -89,6 +91,16 @@
     <Button on:click={() => fetchData()} class="mt-4 w-1/2 mx-auto" color="blue">Submit</Button>
     
 </div>
+
+{#if err}
+<Toast color="orange">
+    <svelte:fragment slot="icon">
+      <ExclamationCircleSolid class="w-5 h-5" />
+      <span class="sr-only">Warning icon</span>
+    </svelte:fragment>
+    Improve password difficulty.
+</Toast>
+{/if}
 
 {#if res}
     <div class="mx-auto mt-4 text-sm">
