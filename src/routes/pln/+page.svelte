@@ -35,6 +35,10 @@
     PLN Checker (Prabayar)
 </h1>
 
+<p class="mx-auto text-sm font-mono text-sky-400 mt-2">
+    Endpoint: https://cek-username.onrender.com/pln
+</p>
+
 <div class="mx-auto mt-12">
 <Label class="mt-4">
     <span class="text-blue-700 font-bold">Nomor Pelanggan PLN Anda</span>
