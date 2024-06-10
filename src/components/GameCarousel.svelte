@@ -8,7 +8,7 @@
         },
         {
             alt: 'Mohile Legends',
-            src: 'https://www.pockettactics.com/wp-content/uploads/2021/01/mobile-legends-wallpaper-6.jpg',
+            src: 'https://th.bing.com/th/id/OIP.3ri4BfYhvfBfkY2QQ6AI4wHaEK?rs=1&pid=ImgDetMain',
             title: 'ml-banner'
         },
         {
