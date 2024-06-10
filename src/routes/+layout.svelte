@@ -1,7 +1,7 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-	import { inject } from '@vercel/analytics/*';
+	import { inject } from '@vercel/analytics';
 	inject()
 </script>
 
