@@ -38,19 +38,172 @@
     let response;
     let err;
     async function fetchData() {
-        if (selected === "freefire") {
-         try {
-            const startTime = Date.now();
-            response = await axios
-                            .get(baseUrl + "freefire?uid=" + uid);
-            const endTime = Date.now();
-            ping = endTime - startTime;
-            res = JSON.stringify(response.data.data, null, 2);
-            console.log(res)
-         } catch (error) {
-            alert(error)
-            return error
-         }
+        switch(selected) {
+            case "freefire": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "freefire?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "mobilelegends": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "mobilelegends?uid=" + uid + "&zone=" + zoneId);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "pubgm": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "pubgm?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "codm": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "codm?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "honkaiimpact": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "honkaiimpact?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "honkaistarrail": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "honkaistarrail?uid=" + uid + "&zone=" + zSelected);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "genshinimpact": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "genshinimpact?uid=" + uid + "&zone=" + zSelected);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "arenaofvalor": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "arenaofvalor?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "sausageman": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "sausageman?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "lolwildrift": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "lolwildrift?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
+            case "fcmobile": {
+                try {
+                    const startTime = Date.now();
+                    response = await axios
+                                    .get(baseUrl + "fcmobile?uid=" + uid);
+                    const endTime = Date.now();
+                    ping = endTime - startTime;
+                    res = JSON.stringify(response.data.data, null, 2);
+                    console.log(res)
+                } catch (error) {
+                    alert(error)
+                    return error
+                }
+                break;
+            }
         }
     }
 </script>
@@ -67,8 +220,14 @@
     Game Nickname Validator
 </h1>
 
-<p class="mx-auto text-sm font-mono text-sky-400 mt-2">
-    Endpoint: https://cek-username.onrender.com/game
+<p class="mx-auto text-center text-sm font-mono text-sky-400 mt-2">
+    Endpoint: https://cek-username.onrender.com/game/gameName<br/>
+    Contoh:<br/>
+    GET https://cek-username.onrender.com/game/freefire?uid=1583297502<br/>
+    Note: Khusus Mobile Legends, Genshin Impact, dan Honkai Star Rail sertakan zone id<br/>
+    GET https://cek-username.onrender.com/game/mobilelegends?uid=189676589&zone=2985<br/>
+    GET https://cek-username.onrender.com/game/genshinimpact?uid=9292828&zone=os_asia<br/>
+    GET https://cek-username.onrender.com/game/honkaistarrail?uid=73773288&zone=os_usa<br/>
 </p>
 
 <div class="mx-auto mt-12">
