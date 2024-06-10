@@ -36,7 +36,7 @@
 </h1>
 
 <p class="mx-auto text-sm font-mono text-sky-400 mt-2">
-    Endpoint: https://cek-username.onrender.com/pln
+    Endpoint: https://cek-username.onrender.com/pln?uid=
 </p>
 
 <div class="mx-auto mt-12">
